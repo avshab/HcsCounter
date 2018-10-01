@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HCS</string>
+    <string name="hcs_label">Коммунальные услуги</string>
+    <string name="elect_label">Электричество</string>
+    <string name="elect_sum">счет за электричество</string>
+    <string name="elect_night_label">Ночные показания</string>
+    <string name="elect_daytime_label">Дневные показания</string>
+    <string name="elect_night_previous"></string>
+    <string name="elect_daytime_previous"></string>
+    <string name="elect_night_current">Ночные показания</string>
+    <string name="elect_daytime_current">Дневные показания</string>
+    <string name="pay_sum_label">Итого к оплате</string>
+    <string name="pay_sum">сумма</string>
+    <string name="btn_send_email">Отправить письмо</string>
+    <string name="btn_save_data">Сохранить данные</string>
+</resources>

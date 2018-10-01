@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paySumLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/pay_sum_label"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/paySum"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/pay_sum"
+                android:textSize="16dp"
+                android:textStyle="italic"
+                android:typeface="serif"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hcsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="@string/hcs_label"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/hcsCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:inputType="numberDecimal"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:typeface="serif"
+                android:gravity="center"
+                android:maxLength="7"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="282dp">
+
+
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/electLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elect_label"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/electSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/elect_sum"
+                    android:textSize="16sp"
+                    android:textStyle="italic"
+                    android:typeface="serif"
+                    android:gravity="center_vertical"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowElectDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/electDayLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/elect_daytime_label"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/electDaytimePrevious"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:gravity="center_vertical"
+                    android:text="@string/elect_daytime_previous"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/electDaytimeCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/elect_daytime_current"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:maxLength="4" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRowElectNight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/electNightLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/elect_night_label"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/electNightPrevious"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:text="@string/elect_night_previous"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    android:typeface="serif"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/electNightCurrent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:hint="@string/elect_night_current"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:typeface="serif"
+                    android:gravity="center"
+                    android:maxLength="4"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="282dp">
+
+            <Button
+                android:id="@+id/btnSaveData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_save_data" />
+
+            <Button
+                android:id="@+id/btnSendEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_send_email" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
